@@ -7,7 +7,7 @@ before_install:
 
 script:
   - docker run pankajsherchan/react-test npm test -- --coverage
-
+#comment
 after_success:
   - docker build -t pankajsherchan/multi-client ./client
   - docker build -t pankajsherchan/multi-server ./server
