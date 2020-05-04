@@ -1,4 +1,4 @@
-sudo:required
+sudo: required
 services:
   - docker
 
@@ -18,4 +18,3 @@ after_success:
   - docker push pankajsherchan/multi-server
   - docker push pankajsherchan/multi-nginx
   - docker push pankajsherchan/multi-worker
-
